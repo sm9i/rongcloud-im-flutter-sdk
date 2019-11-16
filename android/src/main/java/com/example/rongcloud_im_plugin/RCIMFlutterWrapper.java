@@ -187,7 +187,7 @@ public class RCIMFlutterWrapper {
 
             String appkey = String.valueOf(arg);
             this.appkey = appkey;
-            RongIMClient.init(mContext, appkey);
+            RongIMClient.init(mContext, appkey,true);
 
             try {
                 // IMLib 默认检测到小视频 SDK 才会注册小视频消息，所以此处需要手动注册
