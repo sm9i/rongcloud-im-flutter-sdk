@@ -182,7 +182,9 @@ public class RCIMFlutterWrapper {
         if (arg instanceof String) {
             //配置推送
             PushConfig config = new PushConfig.Builder()
-                    .enableHWPush(true).build();
+                    .enableHWPush(true)
+                    .enableFCM(true)
+                    .build();
             RongPushClient.setPushConfig(config);
 
             String appkey = String.valueOf(arg);
